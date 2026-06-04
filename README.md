@@ -28,7 +28,7 @@ If the installation was successful, you should be able to run the following comm
     $ node --version
     v8.11.3
 
-    $ npm --version
+    $ npm --version 
     6.1.0
 
 ---
