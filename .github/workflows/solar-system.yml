@@ -124,6 +124,8 @@ jobs:
       steps:
       - name: Install Kubernetes cluster
         uses: helm/kind-action@v1
+
+      - name: verify cluster pods
         run: |
           sleep 60
           kubectl -n kube-system get pod
