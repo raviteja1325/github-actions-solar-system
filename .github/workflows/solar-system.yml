@@ -99,7 +99,7 @@ jobs:
           tags: ${{vars.DOCKER_USERNAME}}/solar-system:${{ github.sha }}
           
       - name: Test container locally
-        run: |
+        run: | 
           docker run --rm -d -p 3000:3000 \
             -e MONGO_URI=$MONGO_URI \
             -e MONGO_USERNAME=$MONGO_USERNAME \
