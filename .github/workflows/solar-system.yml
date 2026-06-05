@@ -39,7 +39,7 @@ jobs:
     code-coverage:
       name: Code Coverage
       runs-on: ubuntu-latest
-      continue-on-error: true
+      
       steps:
         - name: Checkout repository
           uses: actions/checkout@v4
@@ -54,6 +54,7 @@ jobs:
   
         - name: Run coverage
           run: npm run coverage
+          continue-on-error: true
           
   
         - name: Archive coverage report
