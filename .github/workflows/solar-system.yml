@@ -12,6 +12,17 @@ env:
   MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
     
 jobs:
+    run-lint:
+        name: run-lint
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout reopsitory
+          uses: actions/checkout@v4
+        - name: lint code base
+          uses: super-linter/super-linter@v7
+          env:
+            VALIDATE_ALL_CODEBASE: false
+            GITHUB_TOKEN: ${{github.token}}
     unit-testing:
         name: Unit Testing
         runs-on: ubuntu-latest
@@ -38,6 +49,7 @@ jobs:
             
     code-coverage:
       name: Code Coverage
+      needs: unit-testing
       runs-on: ubuntu-latest
       
       steps:
