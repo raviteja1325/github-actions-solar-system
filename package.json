@@ -17,14 +17,12 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mocha-junit-reporter": "^2.2.1",
-    "mongoose": "^9.7.1",
-    "nyc": "^18.0.0"
+    "mongoose": "5.13.20",
+    "nyc": "^15.1.0"
   },
   "devDependencies": {
     "chai": "*",
     "chai-http": "*",
-    "globals": "^17.6.0",
-    "mocha": "*",
-    "typescript-eslint": "^8.61.1"
+    "mocha": "*"
   }
 }
