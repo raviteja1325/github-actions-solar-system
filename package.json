@@ -21,9 +21,6 @@
     "nyc": "^18.0.0"
   },
   "devDependencies": {
-    "eslint": "^9.21.0",
-    "@eslint/js": "^9.21.0",
-    "eslint-plugin-react": "^7.37.5",
     "chai": "*",
     "chai-http": "*",
     "globals": "^17.6.0",
